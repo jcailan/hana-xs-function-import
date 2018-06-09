@@ -55,7 +55,7 @@ function _getParameter(oFunctionImport) {
 			throw new Error("Invalid Function Import Parameter");
 		}
 		
-		if (aParameter[i].Type === $.sample.edm.type.STRING) {
+		if (aParameter[i].Type === $.type.STRING) {
 			if (oValue.indexOf("'") === 0 && oValue.lastIndexOf("'") === (oValue.length - 1)) {
 				oValue = oValue.replace(/\'/g, "");
 			} else {
