@@ -1,11 +1,11 @@
 "use strict";
 
-$.import("sample.edm", "type");
-$.import("sample.core", "MessageUtility");  
-$.import("sample.core", "MetadataGenerator");  
+$.import("", "type");
+$.import("", "MessageUtility");  
+$.import("", "MetadataGenerator");  
 
-var MessageUtility = $.sample.core.MessageUtility;
-var MetadataGenerator = $.sample.core.MetadataGenerator;
+var MessageUtility = $.MessageUtility;
+var MetadataGenerator = $.MetadataGenerator;
 
 /**
  * Get the Function Import Definitions
