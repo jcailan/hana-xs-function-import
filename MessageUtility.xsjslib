@@ -1,3 +1,5 @@
+ "use strict";
+
 /**
  * Converts the oError object into a JSON qualified format
  * @param {(object|Array)} oError The error object
