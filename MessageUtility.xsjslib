@@ -1,4 +1,4 @@
- "use strict";
+"use strict";
 
 /**
  * Converts the oError object into a JSON qualified format
