@@ -1,11 +1,11 @@
 "use strict";
 
-$.import("", "type");
-$.import("", "MessageUtility");  
-$.import("", "MetadataGenerator");  
+$.import("custom", "type");
+$.import("custom", "MessageUtility");  
+$.import("custom", "MetadataGenerator");  
 
-var MessageUtility = $.MessageUtility;
-var MetadataGenerator = $.MetadataGenerator;
+var MessageUtility = $.custom.MessageUtility;
+var MetadataGenerator = $.custom.MetadataGenerator;
 
 /**
  * Get the Function Import Definitions
@@ -55,7 +55,7 @@ function _getParameter(oFunctionImport) {
 			throw new Error("Invalid Function Import Parameter");
 		}
 		
-		if (aParameter[i].Type === $.type.STRING) {
+		if (aParameter[i].Type === $.custom.type.STRING) {
 			if (oValue.indexOf("'") === 0 && oValue.lastIndexOf("'") === (oValue.length - 1)) {
 				oValue = oValue.replace(/\'/g, "");
 			} else {

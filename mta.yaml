@@ -1,0 +1,12 @@
+ID: hana-xs-function-import
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: xsjs
+   type: nodejs
+   path: xsjs
+   provides:
+    - name: xsjs_api
+      properties:
+         url: ${default-url}

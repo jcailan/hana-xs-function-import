@@ -1,6 +1,6 @@
 "use strict";
 
-$.import("", "type");
+$.import("custom", "type");
 
 /**
  * Get the property definition of a Return Type in EDM format
@@ -37,7 +37,7 @@ function _getProperty(oReturnTypeDefinition) {
 	
 	for (i in aProperty) {
 		switch (aProperty[i].Type) {
-			case $.type.DECIMAL:
+			case $.custom.type.DECIMAL:
 				
 				sMetadata += "<Property Name=\"" + aProperty[i].Name + "\"" 
 					+ " Type=\"" + aProperty[i].Type + "\"" 
@@ -45,7 +45,7 @@ function _getProperty(oReturnTypeDefinition) {
 					+ " Scale=\"" + aProperty[i].Scale + "\"/>";
 				
 				break;
-			case $.type.STRING:
+			case $.custom.type.STRING:
 				
 				sMetadata += "<Property Name=\"" + aProperty[i].Name + "\""
 					+ " Type=\"" + aProperty[i].Type + "\"" 
